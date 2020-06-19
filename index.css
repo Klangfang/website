@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, sans-serif;
+  line-height: 1.3;
+  font-kerning: normal;
+  text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+main {
+  height: 100%;
+}
+
+:root {
+  --spacing-unit: 8px;
+  --color-green: #37DC78;
+  --color-white: #FAFAFA;
+}
+
+/* Foreground */
+.foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.foreground--desktop {
+  display: none;
+}
+
+.phone-content,
+.text-content {
+  scroll-snap-align: start;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content--full {
+  background-color: var(--color-white);
+}
+
+/* Background */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.background-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: calc(var(--spacing-unit) * 2);
+}
+
+.phone-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.phone-section {
+  background-color: var(--color-green);
+}
+
+.phone-section__content {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+
+.text-content.text-content--full {
+  grid-column: 1 / 3;
+  width: 100%;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10%;
+}
+
+.foreground-container {
+  width: 100%;
+  height: 20%;
+  background-color: var(--color-green);
+}
+
+/* Responsive stuff */
+@media only screen and (min-width: 768px) {
+  * {
+    color: red;
+  }
+
+  .foreground--mobile {
+    display: none;
+  }
+
+  .foreground--desktop {
+    display: block;
+  }
+
+  .foreground-slide {
+    position: relative;
+    scroll-snap-align: start;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .foreground-slide,
+  .background {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .phone-content,
+  .text-content {
+    width: max-content;
+  }
+
+  .phone-content {
+    grid-column: 1;
+  }
+
+  .text-content {
+    grid-column: 2;
+    margin: 0 10%;
+  }
+
+  .phone {
+    width: 100%;
+  }
+
+  .phone__image {
+    width: 100%;
+    height: 100%;
+  }
+}
