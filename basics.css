@@ -114,12 +114,14 @@ a {
   --letter-spacing-body--4: 0.015rem;
 }
 
+/* Tablet */
 @media(min-width: 768px) {
   :root {
     --spacing--horizontal: calc(var(--spacing-unit) * 4);
   }
 }
 
+/* Desktop */
 @media(min-width: 1280px) {
   :root {
     --spacing--horizontal: calc(var(--spacing-unit) * 8);

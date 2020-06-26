@@ -31,6 +31,22 @@
   padding: 0 var(--spacing--horizontal);
 }
 
+.text-content-heading {
+  font-family: var(--font-family-display--3);
+  font-size: var(--font-size-display--3);
+  font-weight: var(--font-weight-display--3);
+  line-height: var(--line-height-display--3);
+  letter-spacing: var(--letter-spacing-display--3);
+}
+
+.text-content-text {
+  font-family: var(--font-family-body--3);
+  font-size: var(--font-size-body--3);
+  font-weight: var(--font-weight-body--3);
+  line-height: var(--line-height-body--3);
+  letter-spacing: var(--letter-spacing-body--3);
+}
+
 /* Background */
 .background {
   position: absolute;
@@ -82,6 +98,33 @@
   grid-column: 1 / 3;
   justify-content: start;
   padding: 0 var(--spacing--horizontal);
+}
+
+/* Tablet */
+@media(min-width: 768px) {
+  .text-content-heading {
+    font-family: var(--font-family-display--2);
+    font-size: var(--font-size-display--2);
+    font-weight: var(--font-weight-display--2);
+    line-height: var(--line-height-display--2);
+    letter-spacing: var(--letter-spacing-display--2);
+  }
+
+  .text-content-heading--small {
+    font-family: var(--font-family-display--3);
+    font-size: var(--font-size-display--3);
+    font-weight: var(--font-weight-display--3);
+    line-height: var(--line-height-display--3);
+    letter-spacing: var(--letter-spacing-display--3);
+  }
+
+  .text-content-text {
+    font-family: var(--font-family-body--2);
+    font-size: var(--font-size-body--2);
+    font-weight: var(--font-weight-body--2);
+    line-height: var(--line-height-body--2);
+    letter-spacing: var(--letter-spacing-body--2);
+  }
 }
 
 /* Desktop */
@@ -148,5 +191,29 @@
     background-color: var(--color-green-light);
     width: max-content;
     padding: 16px 24px;
+  }
+
+  .text-content-heading {
+    font-family: var(--font-family-display--1);
+    font-size: var(--font-size-display--1);
+    font-weight: var(--font-weight-display--1);
+    line-height: var(--line-height-display--1);
+    letter-spacing: var(--letter-spacing-display--1);
+  }
+
+  .text-content-heading--small {
+    font-family: var(--font-family-display--2);
+    font-size: var(--font-size-display--2);
+    font-weight: var(--font-weight-display--2);
+    line-height: var(--line-height-display--2);
+    letter-spacing: var(--letter-spacing-display--2);
+  }
+
+  .text-content-text {
+    font-family: var(--font-family-body--1);
+    font-size: var(--font-size-body--1);
+    font-weight: var(--font-weight-body--1);
+    line-height: var(--line-height-body--1);
+    letter-spacing: var(--letter-spacing-body--1);
   }
 }
