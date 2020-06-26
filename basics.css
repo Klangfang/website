@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Space";
+  src: url("./assets/SpaceGroteskVariable.ttf") format("truetype-variations");
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter-roman.otf") format("opentype-variations");
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,9 +24,12 @@ html, body {
 }
 
 body {
-  font-size: 16px;
-  font-family: -apple-system, sans-serif;
-  line-height: 1.3;
+  font-family: var(--font-family-body--1);
+  font-size: var(--font-size-body--1);
+  font-weight: var(--font-weight-body--1);
+  line-height: var(--line-height-body--1);
+  letter-spacing: var(--letter-spacing-body--1);
+
   font-kerning: normal;
   text-size-adjust: none;
   text-rendering: optimizeLegibility;
@@ -30,22 +49,72 @@ a {
 
 :root {
   --color-black: #000;
-  --color-green: #37DC78;
+  --color-gray-dark: #444444;
+  --color-gray-middle: #BDBDBD;
+  --color-gray-light: #E0E0E0;
   --color-white: #FAFAFA;
+  --color-red: #F05555;
+  --color-yellow-dark: #B09000;
+  --color-yellow-light: #FFD800;
+  --color-green-dark: #2D643C;
+  --color-green-light: #37DC78;
 
   --spacing-unit: 8px;
   --spacing--horizontal: calc(var(--spacing-unit) * 2);
-}
 
-.h-alpha {
-  font-size: 2em;
+  --font-family-display: "Space", Verdana, sans-serif;
+  --font-family-body: "Inter", Verdana, sans-serif;
+
+  --font-family-display--1: var(--font-family-display);
+  --font-size-display--1: 3rem;
+  --font-weight-display--1: bold;
+  --line-height-display--1: 117%;
+  --letter-spacing-display--1: 0.03rem;
+
+  --font-family-display--2: var(--font-family-display);
+  --font-size-display--2: 2rem;
+  --font-weight-display--2: bold;
+  --line-height-display--2: 117%;
+  --letter-spacing-display--2: 0.02rem;
+
+  --font-family-display--3: var(--font-family-display);
+  --font-size-display--3: 1.5rem;
+  --font-weight-display--3: bold;
+  --line-height-display--3: 117%;
+  --letter-spacing-display--3: 0.015rem;
+
+  --font-family-display--4: var(--font-family-display);
+  --font-size-display--4: 1.25rem;
+  --font-weight-display--4: bold;
+  --line-height-display--4: 117%;
+  --letter-spacing-display--4: 0.0125rem;
+
+  --font-family-body--1: var(--font-family-body);
+  --font-size-body--1: 1rem;
+  --font-weight-body--1: normal;
+  --line-height-body--1: 150%;
+  --letter-spacing-body--1: 0.01rem;
+
+  --font-family-body--2: var(--font-family-body);
+  --font-size-body--2: .875rem;
+  --font-weight-body--2: normal;
+  --line-height-body--2: 150%;
+  --letter-spacing-body--2: 0.015rem;
+
+  --font-family-body--3: var(--font-family-body);
+  --font-size-body--3: .75rem;
+  --font-weight-body--3: normal;
+  --line-height-body--3: 150%;
+  --letter-spacing-body--3: 0.02rem;
+
+  --font-family-body--4: var(--font-family-body);
+  --font-size-body--4: .625rem;
+  --font-weight-body--4: normal;
+  --line-height-body--4: 150%;
+  --letter-spacing-body--4: 0.015rem;
 }
 
 @media(min-width: 768px) {
-  body {
-    font-size: 20px;
-  }
-
   :root {
     --spacing--horizontal: calc(var(--spacing-unit) * 4);
   }

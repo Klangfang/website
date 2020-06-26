@@ -55,7 +55,7 @@
 }
 
 .phone-section {
-  background-color: var(--color-green);
+  background-color: var(--color-green-light);
 }
 
 .phone-section__content {
@@ -145,7 +145,7 @@
     grid-area: cta;
 
     color: var(--color-white);
-    background-color: var(--color-green);
+    background-color: var(--color-green-light);
     width: max-content;
     padding: 16px 24px;
   }
