@@ -14,131 +14,47 @@
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="basics.css">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-<main>
-<!--    Desktop-->
-    <div class="foreground foreground--desktop">
-        <div class="foreground-slide">
-            <div class="phone-content">Phone content #1</div>
-            <div class="text-content">
-                <div class="text-content__container">
-                    <h1 class="text-content-heading">Zuhören, Geräusche sammeln, gemeinsam komponieren.</h1>
-                    <p class="text-content-text">
-                        Klangfang ist ein sozialer Sound-Editor, der dich auf ungewöhnliche Weise mit Menschen verbindet. Direkt auf deinem Smartphone.
-                    </p>
-                    <div class="text-content-about__cta">
-                        <a href="#">Mehr erfahren →</a>
-                    </div>
+<main class="main">
+    <div class="content">
+        <section class="section section--1">
+            <div class="section__intro section-intro">
+                <div class="section-intro__icon">
+                    <img src="./assets/klangfang_flowericon.svg"
+                         alt="Klangfang Icon"/>
+                </div>
+                <h1 class="section-intro__title t--display-3">Zuhören, Geräusche sammeln, gemeinsam komponieren.</h1>
+                <p class="t--body-3">Klangfang ist ein sozialer Sound-Editor, der dich auf ungewöhnliche Weise mit
+                    Menschen verbindet.
+                    Direkt auf deinem Smartphone.</p>
+                <div class="button t--body-3"><a href="#">Mehr erfahren</a></div>
+            </div>
+            <div class="section__phone section__phone--1"></div>
+        </section>
+        <section class="section section--2">
+            <div class="card">
+                <h1 class="card__title t--display-4">Bring den Stein ins rollen</h1>
+                <p class="card__description t--body-3">Starte eine neue Klangcollage, nimm ein paar Sounds auf und beobachte, was
+                    die Community daraus macht! Alle bekommen gleich viel Platz für ihre Sounds. Nach vier Teilnehmern
+                    ist die Collage fertig.</p>
+            </div>
+            <div class="section__phone section-phone t--display-4">
+                <div class="section-phone__content section-phone__content--2 t--body-3">
+                    <img src="./assets/device.png"
+                         alt="Klangfang Icon"/>
                 </div>
             </div>
-        </div>
-        <div class="foreground-slide">
-            <div class="phone-content">Phone content #2</div>
-            <div class="text-content">
-                <div class="text-content__container">
-                    <h1 class="text-content-heading text-content-heading--small">Bring den Stein ins Rollen</h1>
-                    <p class="text-content-text">
-                        Starte eine neue Klangcollage, nimm ein paar Sounds auf und beobachte, was die Community daraus
-                        macht! Alle bekommen gleich viel Platz für ihre Sounds. Nach vier Teilnehmern ist die Collage
-                        fertig.
-                    </p>
-                </div>
+        </section>
+        <section class="section section--last">
+            <div class="card">
+                <h1 class="card__title t--display-4">Bring den Stein ins rollen</h1>
+                <p class="card__description t--body-3">Starte eine neue Klangcollage, nimm ein paar Sounds auf und beobachte, was
+                    die Community daraus macht! Alle bekommen gleich viel Platz für ihre Sounds. Nach vier Teilnehmern
+                    ist die Collage fertig.</p>
             </div>
-        </div>
-        <div class="foreground-slide">
-            <div class="text-content text-content--full">
-                <div class="text-content__container">
-                    <h1 class="text-content-heading">Auf der Roadmap</h1>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>sed diam nonumy eirmod tempor invidunt
-                            ut labore et dolore magna aliquyam erat
-                        </li>
-                        <li>At vero eos et accusam et justo duo
-                            dolores et ea rebum.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="foreground-slide">
-            <div class="text-content text-content--full">
-                <div class="text-content__container">
-                    <h1 class="text-content-heading">Warum Klangcollagen?</h1>
-                    <div class="text-content-about">
-                        <div class="text-content-about__image">
-                            Bilder
-                        </div>
-                        <p class="text-content-about__description">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum.
-                        </p>
-                        <div class="text-content-about__cta">
-                            <a href="#">Check unsere Story</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="foreground foreground--mobile">
-        <div class="phone-content">Phone content #1</div>
-        <div class="text-content">
-            <div class="text-content__container">
-                <h1 class="text-content-heading">Zuhören, Geräusche sammeln, gemeinsam komponieren.</h1>
-                <p class="text-content-text">
-                    Klangfang ist ein sozialer Sound-Editor, der dich auf ungewöhnliche Weise mit Menschen verbindet. Direkt auf deinem Smartphone.
-                </p>
-            </div>
-        </div>
-        <div class="phone-content">Phone content #2</div>
-        <div class="text-content">Text content #2</div>
-        <div class="text-content text-content--full">
-            <div class="text-content__container">
-                <h1 class="text-content-heading">Auf der Roadmap</h1>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat
-                    </li>
-                    <li>At vero eos et accusam et justo duo
-                        dolores et ea rebum.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="text-content text-content--full">
-            <div class="text-content__container">
-                <h1 class="text-content-heading">Warum Klangcollagen?</h1>
-                <div class="text-content-about">
-                    <div class="text-content-about__image">
-                        Bilder
-                    </div>
-                    <p class="text-content-about__description">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum.
-                    </p>
-                    <div class="text-content-about__cta">
-                        <a href="#">Check unsere Story</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="background">
-        <div class="background-icon">
-            <img class="background-icon__image" src="./assets/klangfang_flowericon.svg" alt="Klangfang Icon"/>
-        </div>
-        <div class="phone-section">
-            <div class="phone-section__content">
-                <div class="phone">
-                    <img class="phone__image" src="./assets/google_pixel.svg" alt="Telefon"/>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
 </main>
 </body>
