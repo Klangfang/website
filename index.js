@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // initial call
   triggerAnimation();
 
-  const content = document.querySelector(".content");
+  const content = document.querySelector("#scroll-content");
   // TODO: throttle scrolling
   content.addEventListener("scroll", triggerAnimation);
 
   // Animate on scroll into viewport
   function triggerAnimation() {
-    const rect = document.querySelector(".section--1");
-    const rect2 = document.querySelector(".section--2");
-    const lastRect = document.querySelector(".section--last");
+    const rect = document.querySelector("#section--1");
+    const rect2 = document.querySelector("#section--2");
+    const lastRect = document.querySelector("#section--last");
 
     // Offset of element from viewport bottom
     const offset = 100;
