@@ -137,5 +137,18 @@ a {
 .card-content {
   background-color: var(--color-white);
   border: 1px solid var(--color-green-light);
-  padding: calc(var(--spacing-unit) * 2);
+  box-shadow: var(--hint-shadow-1);
+  padding-top: calc(var(--spacing-unit) * 2.5);
+  padding-left: calc(var(--spacing-unit) * 2);
+  padding-right: calc(var(--spacing-unit) * 2);
+  padding-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.card-content__title {
+  margin-top: 0;
+  margin-bottom: calc(var(--spacing-unit) * .5);
+}
+
+.card-content__description {
+  margin: 0;
 }
