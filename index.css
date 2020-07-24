@@ -27,6 +27,17 @@
 
 .section-intro {
   padding: calc(var(--spacing-unit) * 2);
+  min-height: calc(70vh - calc(var(--spacing-unit) * 4));
+}
+
+.section-intro__title {
+  margin-top: calc(var(--spacing-unit) * 2);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.section-intro__description {
+  margin-top: calc(var(--spacing-unit) * 2);
+  margin-bottom: calc(var(--spacing-unit) * 2);
 }
 
 .section-intro__icon {
@@ -40,9 +51,9 @@
   border-left: solid white;
   border-right: solid white;
   border-width: calc(var(--spacing-unit) * 2);
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*position: relative;*/
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .scrolling .section__phone {
@@ -62,9 +73,8 @@
 }
 
 .section-phone__content--2 {
-  background-color: orange;
   position: fixed;
-  width: 60vw;
+  width: calc(100% - calc(var(--spacing-unit) * 12));
   height: 80vh;
   z-index: 10;
 
