@@ -40,11 +40,7 @@
   min-height: calc(70vh - calc(var(--spacing-unit) * 5));
 }
 
-.section-intro__title {
-  margin-top: calc(var(--spacing-unit) * 2);
-  margin-bottom: calc(var(--spacing-unit) * 2);
-}
-
+.section-intro__title,
 .section-intro__description {
   margin-top: calc(var(--spacing-unit) * 2);
   margin-bottom: calc(var(--spacing-unit) * 2);
@@ -95,4 +91,36 @@
 
 .last-in-vp .section-phone__content {
   top: -100vh;
+}
+
+.roadmap {
+  background-color: lightseagreen;
+}
+
+.roadmap__title {
+  margin: 0;
+  padding-top: calc(var(--spacing-unit) * 10);
+  padding-left: calc(var(--spacing-unit) * 2);
+  padding-right: calc(var(--spacing-unit) * 2);
+}
+
+.roadmap-ideas {
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  scroll-padding: 0 50%;
+  scroll-snap-type: x mandatory;
+}
+
+.roadmap-idea {
+  scroll-snap-align: center;
+  display: inline-block;
+  height: 70vh;
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+.roadmap-idea__visual {
+  background-color: var(--color-gray-middle);
+  width: 60vw;
+  height: 60vw;
 }
