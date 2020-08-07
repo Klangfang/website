@@ -28,7 +28,7 @@
   color: var(--color-black);
 }
 
-.section--green {
+.section--colored {
   background-color: var(--color-green-light);
 }
 
@@ -44,6 +44,17 @@
 .section-intro__description {
   margin-top: calc(var(--spacing-unit) * 2);
   margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.section-intro__image {
+  position: relative;
+  margin: calc(var(--spacing-unit) * 2) 0;
+}
+
+.section-intro__image img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 30vh;
 }
 
 .section__phone {
@@ -93,10 +104,6 @@
   top: -100vh;
 }
 
-.roadmap {
-  background-color: lightseagreen;
-}
-
 .roadmap__title {
   margin: 0;
   padding-top: calc(var(--spacing-unit) * 10);
@@ -115,7 +122,7 @@
 .roadmap-idea {
   scroll-snap-align: center;
   display: inline-block;
-  height: 70vh;
+  height: calc(60vw + 100px); /* Picture + description text */
   padding: calc(var(--spacing-unit) * 2);
 }
 
