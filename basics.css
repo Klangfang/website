@@ -42,7 +42,7 @@ main {
   height: 100%;
 }
 
-img {
+picture, img {
   display: block;
 }
 
@@ -132,7 +132,7 @@ a {
 .card {
   position: relative;
   z-index: 20;
-  margin: calc(var(--spacing-unit) * 2);
+  margin: calc(var(--spacing-unit) * 2) var(--spacing--horizontal);
   height: 100%;
   display: flex;
   align-items: center;
@@ -165,4 +165,39 @@ a {
 .card-content__icon {
   align-self: center;
   margin-left: calc(var(--spacing-unit) * 2);
+}
+
+/* Tablet */
+@media(min-width: 672px) {
+  .t--display-3 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 117%;
+    letter-spacing: 0.02rem;
+  }
+
+  .t--display-4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 117%;
+    letter-spacing: 0.015rem;
+  }
+
+  .t--body-3 {
+    font-size: .875rem;
+    font-weight: normal;
+    line-height: 150%;
+    letter-spacing: 0.015rem;
+  }
+
+  .button.t--body-3 {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.01rem;
+  }
+
+  .card-content {
+    padding: calc(var(--spacing-unit) * 3);
+  }
 }

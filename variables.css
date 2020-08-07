@@ -73,9 +73,9 @@
 }
 
 /* Tablet */
-@media(min-width: 768px) {
+@media(min-width: 672px) {
   :root {
-    --spacing--horizontal: calc(var(--spacing-unit) * 4);
+    --spacing--horizontal: calc(var(--spacing-unit) * 14);
   }
 }
 
