@@ -212,6 +212,13 @@ a {
     letter-spacing: 0.01rem;
   }
 
+  .button--story {
+    grid-row: 3;
+    grid-column: 1;
+    width: max-content;
+    margin-left: var(--spacing--horizontal);
+  }
+
   .card-content {
     padding: calc(var(--spacing-unit) * 3);
   }
