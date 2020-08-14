@@ -82,6 +82,6 @@
 /* Desktop */
 @media(min-width: 1280px) {
   :root {
-    --spacing--horizontal: calc(var(--spacing-unit) * 8);
+    --spacing--horizontal: calc(var(--spacing-unit) * 15);
   }
 }
