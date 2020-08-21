@@ -264,7 +264,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr max-content 1fr;
     align-content: start;
-    grid-row-gap: calc(var(--spacing-unit) * 3);
+    grid-row-gap: calc(var(--spacing-unit) * 6);
   }
 
   .phone-content {
@@ -283,6 +283,15 @@
     grid-column: 2;
     padding-left: var(--spacing--horizontal);
     padding-right: var(--spacing--horizontal);
+    align-self: center;
+  }
+
+  .text-content__heading {
+    margin-bottom: .5em;
+  }
+
+  .text-content__copy {
+    margin-bottom: 1.4em;
   }
 
   .roadmap,
@@ -337,7 +346,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: max-content 1fr max-content;
-    grid-column-gap: var(--spacing--horizontal);
+    grid-column-gap: 8vw;
     grid-row-gap: calc(var(--spacing-unit) * 3);
   }
 
@@ -355,5 +364,6 @@
   .section-story__description {
     grid-column: 1;
     grid-row: 2;
+    max-width: 700px;
   }
 }
