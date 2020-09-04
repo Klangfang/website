@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="basics.css">
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="exchange-screens.js"></script>
 </head>
 <body>
-<main class="main">
+<main class="main" id="main">
     <picture class="klangfang-icon">
         <img src="./assets/klangfang-logo.png"
              alt="Klangfang Icon"/>
     </picture>
+    <!--  Mobile  -->
     <div class="content content--mobile" id="scroll-content">
         <section class="section" id="section--1">
             <div class="section__intro section-intro">
@@ -122,65 +124,44 @@
             </div>
         </section>
     </div>
-    <!--    Desktop-->
+    <!--  Desktop  -->
     <div class="content content--desktop">
-        <div class="sections">
-            <section class="section">
+        <div class="sections" id="scroll-content--desktop">
+            <section class="section section--intro">
                 <div class="text-content">
-                    <h1 class="t--display-1 text-content__heading">Zuhören, Geräusche sammeln, gemeinsam komponieren
-                        .</h1>
-                     <p class="t--body-1 text-content__copy">Klangfang ist ein sozialer Sound-Editor, der dich auf
-                    ungewöhnliche Weise mit
-                    Menschen verbindet.
-                    Direkt auf deinem Smartphone.</p>
+                    <h1 class="t--display-1 text-content__heading">Zuhören, Geräusche sammeln, gemeinsam komponieren .</h1>
+                    <p class="t--body-1 text-content__copy">Klangfang ist ein sozialer Sound-Editor, der dich auf ungewöhnliche Weise mit Menschen verbindet. Direkt auf deinem Smartphone.</p>
                     <div class="button t--body-1"><a href="#">Mehr erfahren</a></div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section section--collect">
                 <picture class="phone-content">
-                    <img src="./assets/screen_2.png"
+                    <img src="./assets/sounds-1.png"
                          alt="Klangfang sound"/>
                 </picture>
                 <div class="text-content">
                     <h2 class="t--display-2 text-content__heading">Bring den Stein ins Rollen</h2>
-                    <p class="t--body-1 text-content__copy">Starte eine neue Klangcollage, nimm ein paar Sounds
-                        auf
-                        und
-                        beobachte,
-                        was
-                        die
-                        Community daraus macht! Alle bekommen gleich viel Platz für ihre Sounds. Nach vier Teilnehmern
-                        ist die Collage fertig.</p>
+                    <p class="t--body-1 text-content__copy">Starte eine neue Klangcollage, nimm ein paar Sounds auf und beobachte, was die Community daraus macht! Alle bekommen gleich viel Platz für ihre Sounds. Nach vier Teilnehmern ist die Collage fertig.</p>
                 </div>
             </section>
-            <section class="section">
+            <section class="section section--collaborate">
                 <picture class="phone-content">
-                    <img src="./assets/screen_2.png"
+                    <img src="./assets/sounds-1.png"
                          alt="Klangfang sound"/>
                 </picture>
                 <div class="text-content">
                     <h2 class="t--display-2 text-content__heading">Gemeinsam sind wir stark</h2>
-                    <p class="t--body-1 text-content__copy">Mach bei bereits existierenden Klangcollagen mit und
-                        kollaboriere
-                        mit
-                        Menschen
-                        aus aller Welt. Bereichere Andere mit deinen Sounds und entdecke die Klänge von anderen
-                        Orten.</p>
+                    <p class="t--body-1 text-content__copy">Mach bei bereits existierenden Klangcollagen mit und kollaboriere mit Menschen aus aller Welt. Bereichere Andere mit deinen Sounds und entdecke die Klänge von anderen Orten.</p>
                 </div>
             </section>
-            <section class="section">
+            <section class="section section--edit">
                 <picture class="phone-content">
-                    <img src="./assets/screen_4.png"
+                    <img src="./assets/sounds-1.png"
                          alt="Klangfang sound"/>
                 </picture>
                 <div class="text-content">
                     <h2 class="t--display-2 text-content__heading">Bearbeite deine Sounds</h2>
-                    <p class="t--body-1 text-content__copy">Kein Schnick-Schnack. Der Collagen-Editor hat nur
-                        die
-                        wichtigsten
-                        Funktionen
-                        und ist für Smartphones optimiert. Nimm Geräusche auf und mische sie auf verschiedenen
-                        Tonspuren.</p>
+                    <p class="t--body-1 text-content__copy">Kein Schnick-Schnack. Der Collagen-Editor hat nur die wichtigsten Funktionen und ist für Smartphones optimiert. Nimm Geräusche auf und mische sie auf verschiedenen Tonspuren.</p>
                 </div>
             </section>
             <section class="section section--roadmap roadmap">
@@ -206,17 +187,13 @@
                             <img src="./assets/roadmap_3.png"
                                  alt="Roadmap Idee"/>
                         </picture>
-                        <p class="roadmap-idea__description t--body-1">Lade Freunde ein und macht zusammen eine private
-                            Team
-                            Collage</p>
+                        <p class="roadmap-idea__description t--body-1">Lade Freunde ein und macht zusammen eine private Team Collage</p>
                     </div>
                 </div>
                 <div class="card card--with-icon card--roadmap">
                     <a href="#">
                         <div class="card__content card-content card-content--with-icon">
-                            <p class="card-content__description t--body-3">Die Entwicklung ist derzeit pausiert. Du
-                                willst
-                                helfen? Stelle uns einen Pull-Request auf GitHub.</p>
+                            <p class="card-content__description t--body-3">Die Entwicklung ist derzeit pausiert. Du willst helfen? Stelle uns einen Pull-Request auf GitHub.</p>
                             <picture class="card-content__icon">
                                 <img src="./assets/open.svg"
                                      alt="Klangfang Icon"/>
@@ -232,19 +209,13 @@
                         <img src="./assets/warum-klangcollagen.png"
                              alt="Warum Klangcollagen?"/>
                     </picture>
-                    <p class="section-story__description t--body-1">Wir wollen dem
-                        Hörsinn, in unserer visuell geprägten
-                        Welt, mehr Aufmerksamkeit schenken. Denn um uns sind viele tolle Geräusche, die darauf warten
-                        entdeckt zu werden. In ihnen steckt unheimlich viel kreatives Potential, das ungenutzt ist.
-                        Zusammen
-                        möchten wir in unseren Alltag hineinhören und durch das gemeinsame Komponieren ein bewusstes
-                        Auseinandersetzen mit der persönlichen Geräuschkulisse erreichen.</p>
+                    <p class="section-story__description t--body-1">Wir wollen dem Hörsinn, in unserer visuell geprägten Welt, mehr Aufmerksamkeit schenken. Denn um uns sind viele tolle Geräusche, die darauf warten entdeckt zu werden. In ihnen steckt unheimlich viel kreatives Potential, das ungenutzt ist. Zusammen möchten wir in unseren Alltag hineinhören und durch das gemeinsame Komponieren ein bewusstes Auseinandersetzen mit der persönlichen Geräuschkulisse erreichen.</p>
                     <div class="button button--story t--body-1"><a href="#">Lies unsere Story</a></div>
                 </div>
             </section>
         </div>
         <div class="background">
-            <img src="./assets/device_1.png"
+            <img class="background__img" src="./assets/device_1.png"
                  alt="Klangfang Icon"/>
         </div>
     </div>
