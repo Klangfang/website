@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
       screen.src = "./assets/device_2.png";
     }
     if (sectionCollaborateTop < window.innerHeight && sectionCollaborateTop > 0) {
-      screen.src = "./assets/device_4.png";
+      screen.src = "./assets/device_3.png";
     }
     if (sectionEditTop < window.innerHeight && sectionEditTop > 0) {
-      screen.src = "./assets/device_1.png";
+      screen.src = "./assets/device_4.png";
     }
   }, false);
 });
