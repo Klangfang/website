@@ -305,6 +305,12 @@
     padding-right: var(--spacing--horizontal);
   }
 
+  .footer {
+    background-color: var(--color-gray-light);
+    padding-left: var(--spacing--horizontal);
+    padding-right: var(--spacing--horizontal);
+  }
+
   .roadmap__title,
   .section-team__title {
     align-self: end;

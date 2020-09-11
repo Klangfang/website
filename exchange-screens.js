@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   content.addEventListener("scroll", function () {
     // Offset of element from viewport top
-    const offset = 300;
+    const offset = 100;
+
     let sectionCollectTop = sectionCollect.getBoundingClientRect().top + offset;
     let sectionCollaborateTop = sectionCollaborate.getBoundingClientRect().top + offset;
     let sectionEditTop = sectionEdit.getBoundingClientRect().top + offset;
