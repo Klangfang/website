@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+.footer ul {
+  list-style-type: none;
+}
+
 /* Mobile (and Tablet) */
 @media (max-width: 1279px) {
   .klangfang-icon img {
@@ -195,6 +199,18 @@
 
   .team__cta a {
     text-decoration: underline;
+  }
+
+  .footer {
+    background-color: var(--color-gray-light);
+  }
+
+  .footer-nav {
+    padding-top: 10vh;
+  }
+
+  .footer-heading {
+    margin-bottom: 0;
   }
 }
 
