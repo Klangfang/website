@@ -206,7 +206,7 @@
   }
 
   .footer-nav {
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: var(--spacing--horizontal);
     padding-right: var(--spacing--horizontal);
   }
@@ -255,5 +255,9 @@
 
   .footer {
     padding-bottom: calc(var(--spacing-unit) * 6);
+  }
+
+  .footer-nav {
+    padding-top: 10vh;
   }
 }

@@ -48,6 +48,29 @@ a {
   text-decoration: none;
 }
 
+.main {
+  background-color: var(--color-white);
+}
+
+.klangfang-icon {
+  position: fixed;
+  z-index: 20;
+  top: calc(var(--spacing-unit) * 2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer p a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /*Typography*/
 .t--display-1 {
   font-family: var(--font-family-display);
@@ -112,31 +135,6 @@ a {
   line-height: 150%;
   letter-spacing: 0.015rem;
 }
-
-/* All screen sizes */
-.main {
-  background-color: var(--color-white);
-}
-
-.klangfang-icon {
-  position: fixed;
-  z-index: 20;
-  top: calc(var(--spacing-unit) * 2);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.footer ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.footer p a {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 
 /*UI Components*/
 .button {
