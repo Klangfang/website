@@ -120,9 +120,11 @@ a {
 /*UI Components*/
 .button {
   font-weight: bold;
+  font-size: inherit;
   border: 2px solid var(--color-black);
   display: inline-block;
   padding: 10px;
+  background-color: inherit;
 }
 
 .button::after {

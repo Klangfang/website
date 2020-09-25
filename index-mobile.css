@@ -14,6 +14,12 @@
 
 .footer ul {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.footer p a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Mobile (and Tablet) */
@@ -207,6 +213,8 @@
 
   .footer-nav {
     padding-top: 10vh;
+    padding-left: var(--spacing--horizontal);
+    padding-right: var(--spacing--horizontal);
   }
 
   .footer-heading {
