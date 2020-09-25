@@ -22,9 +22,7 @@
 html, body {
   margin: 0;
   height: 100%;
-}
 
-body {
   font-family: var(--font-family-body);
   font-size: 16px;
   font-weight: normal;
@@ -32,15 +30,13 @@ body {
   letter-spacing: 0.01rem;
 
   font-kerning: normal;
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "kern" 1, "liga" 1;
-}
-
-main {
-  height: 100%;
 }
 
 picture, img {
