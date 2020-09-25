@@ -95,12 +95,6 @@
     padding-right: var(--spacing--horizontal);
   }
 
-  .footer {
-    background-color: var(--color-gray-light);
-    padding-left: var(--spacing--horizontal);
-    padding-right: var(--spacing--horizontal);
-  }
-
   .roadmap__title,
   .section-team__title {
     align-self: end;
@@ -175,5 +169,25 @@
 
   .section-team__cta a {
     text-decoration: underline;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: var(--color-gray-light);
+    padding-left: var(--spacing--horizontal);
+    padding-right: var(--spacing--horizontal);
+  }
+
+  .footer-nav ul {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: calc(var(--spacing-unit) * 4);
+  }
+
+  .footer-heading {
+    margin: 0;
   }
 }

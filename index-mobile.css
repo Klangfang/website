@@ -209,6 +209,7 @@
 
   .footer {
     background-color: var(--color-gray-light);
+    padding-bottom: calc(var(--spacing-unit) * 2);
   }
 
   .footer-nav {
@@ -257,5 +258,9 @@
 
   .section-story__image {
     margin: calc(var(--spacing-unit) * 4) 0;
+  }
+
+  .footer {
+    padding-bottom: calc(var(--spacing-unit) * 6);
   }
 }
