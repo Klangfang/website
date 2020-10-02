@@ -1,5 +1,5 @@
 /* Desktop */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .klangfang-icon img {
     height: calc(var(--spacing-unit) * 6);
   }

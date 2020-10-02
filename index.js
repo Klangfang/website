@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const lastRect = document.querySelector("#section--last");
 
     // Offset of element from viewport bottom
-    const offset = 100;
+    const offset = 50;
 
     if (rect.getBoundingClientRect().bottom + offset < window.innerHeight) {
       rect.classList.add("scrolling");
