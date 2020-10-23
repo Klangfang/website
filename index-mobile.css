@@ -64,6 +64,9 @@
 
   .section-intro {
     min-height: calc(var(--phone-offset) - calc(var(--spacing-unit) * 5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .section-phone__content {
