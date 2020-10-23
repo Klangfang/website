@@ -159,7 +159,7 @@
     position: relative;
     display: flex;
     padding-top: calc(var(--spacing-unit) * 2);
-    padding-left: calc(var(--spacing--horizontal) / 2);
+    padding-left: var(--spacing--horizontal);
     overflow-x: scroll;
     scroll-padding: 0 50%;
     scroll-snap-type: x proximity;
@@ -171,8 +171,11 @@
     scroll-snap-align: center;
     display: inline-block;
     height: calc(var(--block-height) + 100px); /* Picture + description text */
-    padding-left: calc(var(--spacing--horizontal) / 2);
-    padding-right: calc(var(--spacing--horizontal) / 2);
+  }
+
+  .roadmap-idea + .roadmap-idea,
+  .team-list-item + .team-list-item {
+    padding-left: 5vw;
   }
 
   .roadmap-idea__visual,
@@ -234,6 +237,18 @@
     min-height: calc(var(--phone-offset) - calc(var(--spacing-unit) * 7));
   }
 
+  .section__intro {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, var(--content-max-width)) 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: start;
+    justify-items: start;
+  }
+
+  .section__intro > * {
+    grid-column: 2;
+  }
+
   .scrolling .section-phone__content {
     top: calc(var(--spacing-unit) * 14);
   }
@@ -245,7 +260,7 @@
 
   .roadmap-idea,
   .team-list-item {
-    --block-height: 40vw;
+    --block-height: 208px;
   }
 
   .section-story__description {

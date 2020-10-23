@@ -75,6 +75,11 @@ a {
   text-decoration: underline;
 }
 
+.section-team-list-item__text p span:first-child {
+  font-weight: bold;
+  display: block;
+}
+
 /*Typography*/
 .t--display-1 {
   font-family: var(--font-family-display);
@@ -221,8 +226,8 @@ a {
 /* Mobile (and Tablet) */
 @media (max-width: 1024px) {
   .card {
-    max-width: calc(464px + (var(--spacing-unit) * 2));
-    margin: calc(var(--spacing-unit) * 2) auto;
+    max-width: calc(var(--content-max-width) + (var(--spacing-unit) * 2));
+    margin: 0 auto;
     padding: 0 calc(var(--spacing-unit) * 2);
   }
 
@@ -266,6 +271,13 @@ a {
     grid-column: 1;
     width: max-content;
     margin-left: var(--spacing--horizontal);
+  }
+
+  .card--roadmap {
+    margin-left: var(--spacing--horizontal);
+    width: 100%;
+    max-width: var(--content-max-width);
+    padding: 0;
   }
 
   .card-content {
