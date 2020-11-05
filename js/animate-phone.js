@@ -8,25 +8,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Animate on scroll into viewport
   function triggerAnimation() {
-    const rect = document.querySelector("#section--1");
-    const rect2 = document.querySelector("#section--2");
-    const lastRect = document.querySelector("#section--last");
+    const section1 = document.querySelector("#section--1");
+    const section2 = document.querySelector("#section--2");
+    const lastSection = document.querySelector("#section--last");
 
     // Offset of element from viewport bottom
     const offset = 50;
 
-    if (rect.getBoundingClientRect().bottom + offset < window.innerHeight) {
-      rect.classList.add("scrolling");
-      rect2.classList.add("scrolling");
+    if (section1.getBoundingClientRect().bottom + offset < window.innerHeight) {
+      section1.classList.add("scrolling");
+      section2.classList.add("scrolling");
     } else {
-      rect.classList.remove("scrolling");
-      rect2.classList.remove("scrolling");
+      section1.classList.remove("scrolling");
+      section2.classList.remove("scrolling");
     }
 
-    if (lastRect.getBoundingClientRect().top + offset < window.innerHeight) {
-      rect2.classList.add("last-in-vp");
+    if (lastSection.getBoundingClientRect().top + offset < window.innerHeight) {
+      section2.classList.add("last-in-vp");
     } else {
-      rect2.classList.remove("last-in-vp");
+      section2.classList.remove("last-in-vp");
     }
   }
 });
