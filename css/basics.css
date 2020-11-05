@@ -148,12 +148,13 @@ a {
 /*UI Components*/
 .button {
   font-weight: bold;
-  font-size: inherit;
   border: 2px solid var(--color-black);
   display: inline-block;
-  padding: 10px;
+  padding-inline: calc(var(--spacing-unit) * 2);
+  padding-block: calc(var(--spacing-unit) * 1.5);
   background-color: inherit;
   transition: background-color .1s;
+  width: max-content;
 }
 
 .button:hover {
@@ -164,13 +165,9 @@ a {
   background-color: var(--color-green-dark);
 }
 
-.button a {
-  padding: 10px;
-}
-
 .button::after {
   content: "→";
-  margin-left: 10px;
+  margin-left: calc(var(--spacing-unit) * 1.5);
 }
 
 .card {
