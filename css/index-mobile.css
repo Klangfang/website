@@ -1,4 +1,8 @@
 /* Mobile and Tablet */
+html, body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 1023px) {
   .klangfang-icon img {
     height: calc(var(--spacing-unit) * 4);
@@ -22,6 +26,7 @@
   }
 
   .phone-content {
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     position: relative;
@@ -64,11 +69,6 @@
     justify-content: center;
   }
 
-  .section-phone__content {
-    height: 80vh;
-    top: var(--phone-offset);
-  }
-
   .section-intro__title {
     margin-top: 0;
     margin-bottom: 0;
@@ -83,7 +83,7 @@
   .section-story__title,
   .section-story__description {
     margin-top: calc(var(--spacing-unit));
-    margin-bottom: calc(var(--spacing-unit) * 1.5);
+    margin-bottom: calc(var(--spacing-unit) * 2);
   }
 
   .section-intro__image,
@@ -125,20 +125,26 @@
   }
 
   .section-phone__content {
+    display: flex;
     position: fixed;
-    width: calc(100% - calc(var(--spacing-unit) * 12));
+    width: 100%;
+    height: fit-content;
+    top: calc(288px + var(--spacing-unit) * 4) ;
     z-index: 10;
+    padding-inline: calc(var(--spacing-unit) * 6);
 
-    transition-delay: .1s;
-    transition: top .8s ease-in-out;
+    transition: top .5s ease-out;
   }
 
   .scrolling .section-phone__content {
-    top: calc(var(--spacing-unit) * 10);
+    margin-top: calc(var(--spacing-unit) * 6);
+    height: calc(100% - var(--spacing-unit) * 6);
+    top: 0;
   }
 
   .last-in-vp .section-phone__content {
     top: -100vh !important;
+    transition: top 0.1s linear;
   }
 
   .roadmap,
@@ -203,13 +209,13 @@
     max-height: 100%;
   }
 
-  .team-list-item-text__title {
-    display: block;
+  .team-list-item__text p span:first-child {
     font-weight: bold;
-    margin-top: 16px;
+    display: block;
   }
 
   .team__cta {
+    align-self: center;
     margin: calc(var(--spacing-unit) * 2) var(--spacing--horizontal);
   }
 

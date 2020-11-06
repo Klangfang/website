@@ -142,6 +142,11 @@
     max-height: 100%;
   }
 
+  .section-team-list-item__text p span:first-child {
+    font-weight: bold;
+    display: block;
+  }
+
   .section-story {
     display: grid;
     grid-template-columns: 3fr 2fr;

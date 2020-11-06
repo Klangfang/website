@@ -75,11 +75,6 @@ a {
   text-decoration: underline;
 }
 
-.section-team-list-item__text p span:first-child {
-  font-weight: bold;
-  display: block;
-}
-
 /*Typography*/
 .t--display-1 {
   font-family: var(--font-family-display);
