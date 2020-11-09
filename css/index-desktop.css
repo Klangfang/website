@@ -59,6 +59,7 @@
   }
 
   .phone-content {
+    display: flex;
     position: relative;
     grid-column: 1;
     padding: 10vh 0;
@@ -122,6 +123,7 @@
   }
 
   .roadmap-idea__description {
+    margin-top: 16px;
     margin-bottom: 0;
   }
 
