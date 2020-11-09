@@ -136,7 +136,8 @@ html, body {
     height: fit-content;
     top: calc(288px + var(--spacing-unit) * 4) ;
     z-index: 10;
-    padding-inline: calc(var(--spacing-unit) * 6);
+    padding-left: calc(var(--spacing-unit) * 6);
+    padding-right: calc(var(--spacing-unit) * 6);
 
     transition: top .5s ease-out;
   }
@@ -295,7 +296,8 @@ html, body {
 
   .section-phone__content {
     top: calc(378px + var(--spacing-unit) * 4);
-    padding-inline: calc(var(--spacing-unit) * 22);
+    padding-left: calc(var(--spacing-unit) * 22);
+    padding-right: calc(var(--spacing-unit) * 22);
   }
 
   .show-on-tablet {
