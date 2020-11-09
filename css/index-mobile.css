@@ -27,6 +27,7 @@ html, body {
 
   .phone-content {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -35,9 +36,16 @@ html, body {
   }
 
   .phone-content img {
-    display: block;
     object-fit: contain;
     max-width: 100%;
+  }
+
+  .show-on-tablet {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
   }
 
   .section {
@@ -271,6 +279,10 @@ html, body {
     max-width: 448px;
   }
 
+  .phone-content img {
+    max-width: 67%;
+  }
+
   .section-phone__content img {
     max-width: 320px;
   }
@@ -284,6 +296,14 @@ html, body {
   .section-phone__content {
     top: calc(378px + var(--spacing-unit) * 4);
     padding-inline: calc(var(--spacing-unit) * 22);
+  }
+
+  .show-on-tablet {
+    display: block;
+  }
+
+  .show-on-mobile {
+    display: none;
   }
 
   .roadmap-ideas,
