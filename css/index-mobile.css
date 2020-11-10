@@ -22,6 +22,7 @@ html, body {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     --phone-offset: calc(100% - 280px + var(--spacing-unit) * 4);
   }
 
@@ -52,6 +53,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
+    overflow: visible;
     position: relative;
     color: var(--color-black);
   }

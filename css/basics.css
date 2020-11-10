@@ -82,6 +82,7 @@ a {
   font-weight: bold;
   line-height: 117%;
   letter-spacing: 0.03rem;
+  font-feature-settings: 'ss02', 'ss04';
 }
 
 .t--display-2 {
@@ -90,6 +91,7 @@ a {
   font-weight: bold;
   line-height: 117%;
   letter-spacing: 0.02rem;
+  font-feature-settings: 'ss02', 'ss04';
 }
 
 .t--display-3 {
@@ -98,6 +100,7 @@ a {
   font-weight: bold;
   line-height: 117%;
   letter-spacing: 0.015rem;
+  font-feature-settings: 'ss02', 'ss04';
 }
 
 .t--display-4 {
@@ -106,6 +109,7 @@ a {
   font-weight: bold;
   line-height: 117%;
   letter-spacing: 0.0125rem;
+  font-feature-settings: 'ss02', 'ss04';
 }
 
 .t--body-1 {
@@ -114,6 +118,7 @@ a {
   font-weight: normal;
   line-height: 150%;
   letter-spacing: 0.01rem;
+  font-feature-settings: 'ss01', 'ss02';
 }
 
 .t--body-2 {
@@ -122,6 +127,7 @@ a {
   font-weight: normal;
   line-height: 150%;
   letter-spacing: 0.015rem;
+  font-feature-settings: 'ss01', 'ss02';
 }
 
 .t--body-3 {
@@ -130,6 +136,7 @@ a {
   font-weight: normal;
   line-height: 150%;
   letter-spacing: 0.02rem;
+  font-feature-settings: 'ss01', 'ss02';
 }
 
 .t--body-4 {
@@ -138,6 +145,7 @@ a {
   font-weight: normal;
   line-height: 150%;
   letter-spacing: 0.015rem;
+  font-feature-settings: 'ss01', 'ss02';
 }
 
 /*UI Components*/
