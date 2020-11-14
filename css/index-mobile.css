@@ -194,7 +194,7 @@ html, body {
     scroll-snap-align: center;
     display: inline-block;
     height: calc(var(--block-height) + 100px); /* Picture + description text */
-    margin-right: 5vw;
+    margin-right: calc(var(--spacing-unit) * 2);
   }
 
   .roadmap-idea:last-child,
@@ -312,12 +312,13 @@ html, body {
 
   .roadmap-ideas,
   .team__list {
-    padding-top: calc(var(--spacing-unit) * 5);
+    padding-top: calc(var(--spacing-unit) * 4);
   }
 
   .roadmap-idea,
   .team-list-item {
     --block-height: 208px;
+    margin-right: calc(var(--spacing-unit) * 4);
   }
 
   .section-story__description {
